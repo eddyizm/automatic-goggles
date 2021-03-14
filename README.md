@@ -1,10 +1,16 @@
 # automatic-goggles
 Crossplatform offline kanban built with electron and angular.
 
-
+# prerequisites
+Building the project will require:
+- node js (https://nodejs.org)
+- npm
+- typescript (`npm install typescript`)
 
 # build
+To build the app, install the angular CLI and electron
+-`npm install @angular/cli`
+-`npm install electron --save-dev`
 
-
-first commit test - should go into a PR
-
+This project uses a custom build command:
+-`npm run electron-build`
