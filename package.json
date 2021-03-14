@@ -1,5 +1,5 @@
 {
-  "name": "automatic-googles",
+  "name": "automatic-goggles",
   "version": "0.0.0",
   "main": "main.js",
   "scripts": {
@@ -48,4 +48,5 @@
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
   }
+  
 }

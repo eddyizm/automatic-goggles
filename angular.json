@@ -3,7 +3,7 @@
   "version": 1, 
   "newProjectRoot": "projects",
   "projects": {
-    "automatic-googles": {
+    "automatic-goggles": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/automatic-googles",
+            "outputPath": "dist/automatic-goggles",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "automatic-googles:build"
+            "browserTarget": "automatic-goggles:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "automatic-googles:build:production"
+              "browserTarget": "automatic-goggles:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "automatic-googles:build"
+            "browserTarget": "automatic-goggles:build"
           }
         },
         "test": {
@@ -110,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "automatic-googles:serve"
+            "devServerTarget": "automatic-goggles:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "automatic-googles:serve:production"
+              "devServerTarget": "automatic-goggles:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "automatic-googles"
+  "defaultProject": "automatic-goggles"
 }
