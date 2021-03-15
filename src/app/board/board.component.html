@@ -1,0 +1,18 @@
+<body>
+<div id="container">
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav role='navigation'>
+            <!-- Sidenav code here -->
+            <app-sidenav (sidenavClose)='sidenav.close()'></app-sidenav>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <app-navheader (sidenavToggle)='sidenav.toggle()'></app-navheader>
+            <div id="page-content">
+                <p>Page content goes here</p>
+                <br><br><br><br><br><br>
+            </div>
+            <!-- All content here -->
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>
+</body>

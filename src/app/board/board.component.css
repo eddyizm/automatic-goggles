@@ -1,0 +1,38 @@
+
+
+a:hover a:active{
+    color: lightgray;
+}
+
+.nav-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+mat-toolbar{
+    border-radius: 3px;
+}
+
+#page-content{
+    position: relative;
+    height: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 10px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+}
