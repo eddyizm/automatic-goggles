@@ -14,3 +14,8 @@ To build the app, install the angular CLI and electron
 
 This project uses a custom build command:
 -`npm run electron-build`
+
+# Contributors
+* Eddyizm
+* Leeoku
+* Lori
