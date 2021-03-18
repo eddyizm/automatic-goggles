@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { StartComponent } from './start/start.component';
 import { MatButtonModule } from '@angular/material/button';
+import { NgxElectronModule } from 'ngx-electron';
+
 
 const routes: Routes = [
   { path: '', component: StartComponent, pathMatch: 'full' },
@@ -19,6 +21,7 @@ const routes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    NgxElectronModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
