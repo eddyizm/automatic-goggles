@@ -1,0 +1,18 @@
+.nav-container {
+    display: flex;
+    height: 75px;
+    flex-grow: 1;
+}
+.nav-header {
+    display: flex;
+    height: 75px;
+    width: 100vh;
+    flex-grow: 1;
+}
+
+.nav-header .mat-flat-button {
+    border-radius: 0em;
+    width: 100vh;
+    flex-grow: 1;
+    font-size: 1.5em;
+}
