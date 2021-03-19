@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ElectronService } from 'ngx-electron';
 
-
 @Component({
   selector: 'app-start',
   templateUrl: './start.component.html',
@@ -15,12 +14,9 @@ export class StartComponent implements OnInit {
   }
 
   public openExisting() {
-    console.log("hello world");
     if (this._electronService.isElectronApp) {
-       let result: string = this._electronService.ipcRenderer.sendSync('ping', 'ping');
-       console.log(result);
-     
-    }
+      console.log(this._electronService.ipcRenderer.sendSync('file-load'));
+      }
   }
 
 }

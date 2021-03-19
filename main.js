@@ -1,4 +1,5 @@
 const { app, BrowserWindow, dialog, ipcMain } = require("electron");
+//const fs = require('fs');
 
 let win;
 
@@ -52,7 +53,18 @@ app.on("activate", function () {
   }
 });
 
-ipcMain.on('ping', (event, arg) => {
-  console.log(arg) // prints "ping"
-  event.returnValue = 'pong'
-})
+ipcMain.on("ping", (event, arg) => {
+  console.log(arg); // prints "ping"
+  event.returnValue = "pong";
+});
+
+// file loading
+ipcMain.on("file-load", (event, arg) => {
+  try {
+    let file = dialog.showOpenDialogSync(win, {properties: ['openFile']});
+    event.returnValue = file;
+  } catch (error) {
+    console.error(error);
+  }
+});
+
